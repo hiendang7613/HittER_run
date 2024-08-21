@@ -9,7 +9,7 @@ setup(
     author_email="opencode@microsoft.com",
     packages=["kge"],
     install_requires=[
-        "pyyaml",
+        "pyyaml==6.0.2",
         "pandas",
         "argparse",
         "path",
@@ -24,6 +24,7 @@ setup(
         "networkx==2.4",
         "regex==2020.5.14",
         "pytorch_lightning"
+        "networkx==3.3"
     ],
     zip_safe=False,
     entry_points={"console_scripts": ["kge = kge.cli:main",],},
